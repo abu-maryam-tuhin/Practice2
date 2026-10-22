@@ -29,5 +29,29 @@ as.factor(smoking_status)
 matrix(1:16)
 matrix(1:16, ncol=4)
 matrix(1:25, ncol=5, nrow=5)
-
-
+matrix(1:25, ncol=5, nrow=5, byrow=TRUE)
+mat<-matrix(1:25, ncol=5, nrow=5)
+nrow(mat)
+nrow(mat)
+dim(mat)
+colnames(mat)<- c("T","H","M","I","k")
+rownames(mat)<- c("T","H","M","I","k")
+# data frame
+df<-data.frame(
+  id= c("01","02","03"),
+  age= c(20,23,28),
+  course_pass= factor(c("Y","N","Y"))
+  )
+data<-data.frame(
+  id= c("01","02","03"),
+  age= c(20,23,28),
+  course_pass= c("Y","N","Y"),
+  gender= c("M","F","F")
+)
+str(data)
+data$course_pass
+as.factor(data$course_pass)
+data$course_pass<- as.factor(data$course_pass)
+data$gender<-as.factor(data$gender)
+summary(data)
+summary(df)
