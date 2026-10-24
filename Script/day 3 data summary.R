@@ -23,3 +23,23 @@ library(easystats)
 lm(Height ~ Age,data=data)
 lm_model<-lm(Height~ Age,data=data)
 report(lm_model)
+install.packages("ellmer")
+library(ellmer)
+library(ellmer)
+
+chat <- chat_anthropic(
+  model = "claude-sonnet-5-5",
+  system_prompt = "You are a helpful assistant for R and data analysis."
+)
+
+# Ask one question
+chat$chat("How do I run a t-test in R?")
+
+# Or start an interactive chat in the console
+live_console(chat)
+q
+q
+chat <- chat_anthropic(
+  model = "claude-sonnet-5-5",
+  system_prompt = "You are a helpful assistant for R and data analysis."
+)
